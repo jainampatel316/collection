@@ -1338,5 +1338,7 @@ The repository had no Git history before this push, so its first commit is
 an initial snapshot of the frontend as it stands today. Earlier product
 milestones are recorded in the change log above.
 
-- `feat: initialize ORYN frontend` — Initial snapshot with the React/Vite
-  app, current library page, design system, and project guidance.
+- `6e4b953` — `feat: initialize ORYN frontend` — Initial snapshot with the
+  React/Vite app, current library page, design system, and project guidance.
+- `docs: record initial commit ID in project history` — This entry adds
+  the initial snapshot's commit ID to this file.
