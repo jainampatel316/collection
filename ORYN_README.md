@@ -12,13 +12,14 @@ ORYN once and let the system understand and index it.
 
 ------------------------------------------------------------------------
 
-## Current implementation status — 2026-10-07
+## Current implementation status — 2026-10-08
 
 This document describes ORYN's product vision and target architecture. The current repository implementation is the first frontend page, a responsive sample library:
 
 - Implemented: React 19, TypeScript 6, Vite 8, the Oryn / Kova design system, a responsive visual library page, sample visual references, browser-side text matching, collection filters, sorting, and a session-only URL save preview.
 - Not implemented yet: authentication, API services, database persistence, real capture/upload processing, metadata extraction, AI processing, and semantic or visual search.
 - Search matches words in the sample metadata in the browser. A saved URL is shown for the current page session only; it is not uploaded or persisted.
+- Version control: the project is tracked on the `main` branch and published to [the GitHub repository](https://github.com/jainampatel316/collection).
 - The Next.js, Express, PostgreSQL, Redis, and BullMQ references below describe the proposed product architecture; they are not claims that those systems are already present in this repository.
 - Typography uses Georgia for editorial headings, Segoe UI for interface and reading text, and Consolas for compact numeric labels; the stacks use local system fonts.
 - `README.md` documents local frontend setup. `ORYN_INSTRUCTIONS.md` contains project implementation and design guidance.
@@ -1332,13 +1333,22 @@ The entire system ultimately exists to enable this:
 - **Reason:** Give the interface a clearer editorial voice while using fonts available locally on the development system.
 - **Impact:** The typography renders without downloading or bundling font files; all families remain configurable from the design-system tokens.
 
+### 2026-10-08 — GitHub repository and change tracking
+
+- **Change:** Initialized Git on `main`, connected the project to the GitHub repository, pushed the frontend snapshot, and recorded the repository setup and commit history here.
+- **Reason:** Keep the shared source, project status, and implementation history together and available from GitHub.
+- **Impact:** The repository now has a clean, tracked baseline. This is an initial snapshot; development milestones before Git initialization are described in the dated entries above, not represented as older Git commits.
+- **Commit:** `docs: record GitHub publication and change log update`.
+
 ## Git commit history
 
-The repository had no Git history before this push, so its first commit is
-an initial snapshot of the frontend as it stands today. Earlier product
-milestones are recorded in the change log above.
+The repository had no Git history before the initial push. Its first commit
+is the baseline snapshot; the dated change log above records product work
+that happened before Git was initialized.
 
 - `6e4b953` — `feat: initialize ORYN frontend` — Initial snapshot with the
   React/Vite app, current library page, design system, and project guidance.
-- `docs: record initial commit ID in project history` — This entry adds
+- `0523d11` — `docs: record initial commit ID in project history` — Added
   the initial snapshot's commit ID to this file.
+- `docs: record GitHub publication and change log update` — Updated the
+  dated change log with repository and publication details.

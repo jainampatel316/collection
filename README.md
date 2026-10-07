@@ -4,7 +4,7 @@ A React and TypeScript frontend powered by Vite and styled with the Oryn / Kova 
 
 ## Project guidance
 
-- [ORYN_README.md](./ORYN_README.md) describes the product vision, current implementation status, and planned architecture.
+- [ORYN_README.md](./ORYN_README.md) describes the product vision, current implementation status, planned architecture, and chronological change and commit history.
 - [ORYN_INSTRUCTIONS.md](./ORYN_INSTRUCTIONS.md) contains the project's design and implementation rules.
 - [src/styles/oryn-design-system.css](./src/styles/oryn-design-system.css) is the visual-token and component-style source of truth.
 
